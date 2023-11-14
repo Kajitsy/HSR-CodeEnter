@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "HSR CodeEnter",
+  "version": "1.0.0",
+  "description": "__MSG_extensionDescription__",
+  "default_locale": "en",
+  "icons": {
+    "48": "icon.png"
+  },
+  "permissions": [
+    "activeTab",
+    "cookies",
+    "*://*.hoyoverse.com/",
+    "storage"
+  ],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "__MSG_extensionDescription__"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  }
+}

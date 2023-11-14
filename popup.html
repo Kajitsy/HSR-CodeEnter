@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+<style>
+  :root {
+    --button-color: linear-gradient(45deg, #800080, #9932CC);
+    --button-text-color: white;
+    --input-color: rgba(0, 0, 0, 0.5);
+    --input-text-color: white;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    background-image: url('background.png');
+    color: white;
+    overflow: hidden;
+  }
+  #input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  #code {
+    flex-grow: 1;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: var(--input-color);
+    color: var(--input-text-color);
+    border: none;
+  }
+  #buttons-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  #submit, #share {
+    padding: 10px;
+    background: var(--button-color);
+    color: var(--button-text-color);
+    border: none;
+    cursor: pointer;
+    width: 48%;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+  }
+    button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #submit:hover, #share:hover {
+    transform: scale(1.1);
+  }
+  #frame {
+    border: none;
+  }
+</style>
+</head>
+<body>
+  <div id="input-container">
+    <input type="text" id="code" placeholder="Enter code here">
+  </div>
+  <div id="buttons-container">
+    <button id="submit">__MSG_submit__</button>
+    <button id="share">__MSG_share__</button>
+  </div>
+  <iframe id="frame" src="" width="756" height="550" style="display: none;"></iframe>
+  <script src="popup.js"></script>
+</body>
+</html>
