@@ -2,7 +2,7 @@
 HSR CodeEnter is a Firefox browser extension that allows you to automatically enter codes for the Genshin Impact game and receive rewards.
 
 # How it works?
-Install [Will be later]() from the Firefox add-on store.
+Install [extension](https://addons.mozilla.org/ru/firefox/addon/hsr-codeenter/) from the Firefox add-on store.
 
 Open the page [with entering promotional codes)](https://hsr.hoyoverse.com/gift) and log in to your account.
 
